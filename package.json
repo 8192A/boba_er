@@ -1,0 +1,24 @@
+{
+  "name": "boba_er",
+  "version": "1.0.0",
+  "description": "a boba journal website project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8192A/boba_er.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8192A/boba_er/issues"
+  },
+  "homepage": "https://github.com/8192A/boba_er#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "path": "^0.12.7"
+  }
+}
