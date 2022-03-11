@@ -4,7 +4,8 @@
   "description": "a boba journal website project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "node-fetch": "^2.6.7",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "nodemon": "^2.0.15"
   }
 }
