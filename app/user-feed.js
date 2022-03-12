@@ -22,15 +22,17 @@ const get = async () => {
   return userFeed;
 };
 
-const add = async (user, message) => {
-  const response = await fetch("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fbubble-tea&psig=AOvVaw1g9tLswSAq_yZfF_xzchKn&ust=1647022132009000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOitwNuRvPYCFQAAAAAdAAAAABAK");
-  const body = await response.json();
+const add = async (user, review) => {
   userFeed.unshift({
     // name: user.name,
     // nameHandle: user.email,
-    message: message,
-    imageSource: body.message,
+    tea_type: review.tea_type,
+    sugar_p: review.sugar_p,
+    ice_p: review.ice_p,
+    review: review.review,
+    imageSource: review.img_source
   });
+  console.log(userFeed);
 };
 
 module.exports = {

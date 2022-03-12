@@ -1,16 +1,102 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <%- include('../partials/head') %>
-    </head>
 
-    <body>
-        <header>MOCK SUBMIT page</header>
-        <form action="/boba-review" method="post">
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+    <header>MOCK SUBMIT page</header>
+    <form action="/boba-review" method="post">
+
+        <div class="field">
+            <label class="label">What kind of tea?</label>
+            <div class="control">
+                <div class="select">
+                    <select name="tea_type">
+                        <option>Cheese Tea</option>
+                        <option>Fresh Fruit Tea</option>
+                        <option>Fresh Milk Tea Latte</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Sugar percentage</label>
+            <div class="control">
+                <div class="select">
+                    <select name="sugar_percentage">
+                        <option>0%</option>
+                        <option>30%</option>
+                        <option>50%</option>
+                        <option>70%</option>
+                        <option>100%</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Ice percentage</label>
+            <div class="control">
+                <div class="select">
+                    <select name="ice_percentage">
+                        <option>0%</option>
+                        <option>30%</option>
+                        <option>50%</option>
+                        <option>70%</option>
+                        <option>100%</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Comment</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
+            </div>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+                <button class="button is-link is-light">Cancel</button>
+            </div>
+        </div>
+
+    </form>
+
+
+
+    <!-- <form action="/boba-review" method="post">
             <input class="input" type="text" name="message" placeholder="boba review" />
-            <button class="button mt-2">Ruff!</button>
-        </form>
-    </body>
 
-    <%- include('../partials/footer') %>
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                    <span>Click me</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">
+                      Overview
+                    </a>
+                  </div>
+                </div>
+            </div>
+
+            <button class="button mt-2">BOBA!</button>
+        </form> -->
+</body>
+
+<%- include('../partials/footer') %>
+
 </html>

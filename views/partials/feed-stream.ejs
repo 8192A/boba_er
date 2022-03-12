@@ -1,12 +1,14 @@
 <% feed.forEach(function(feedItem) { %>
     <article style="margin-bottom: 3em;">
       <div class="card">
-        <!-- <div class="card-image">
+        <div class="card-image">
           <figure class="image is-4by3">
             <img src="<%= feedItem.imageSource %>" alt="Placeholder image">
+           
           </figure>
-        </div> -->
-        <div class="card-content">
+        </div>
+        
+        <!-- <div class="card-content">
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
@@ -22,9 +24,22 @@
               </p>
             </div>
           </div>
-  
+   -->
           <div class="content">
-            <%= feedItem.message %>
+            tea type:
+            <%= feedItem.tea_type %>
+          </div>
+          <div class="content">
+            sugar percentage:
+            <%= feedItem.sugar_p %>
+          </div>
+          <div class="content">
+            ice percentage:
+            <%= feedItem.ice_p %>
+          </div>
+          <div class="content">
+            review:
+            <%= feedItem.review %>
           </div>
         </div>
       </div>
